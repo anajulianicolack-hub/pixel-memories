@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Pixel & Memories</title>
+</head>
+<body>
+    <div id="container">
+        <header aria-label="cabeçalho da página">
+        <div class="header-conteudo">
+            <a href="#" class="logo-link">
+                <img src="images/logo.png" alt="logo da pixel memories">
+            </a>
+
+            <nav aria-label="menu de navegação" class="header-nav">
+                <ul>
+                    <li class="aumento"><a href="#">Início</a></li>
+                    <li class="aumento"><a href="games.html">Games</a></li>
+                    <li class="aumento"><a href="sobre.html">Sobre</a></li>
+                    <li class="aumento"><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+
+        <main aria-label="conteúdo principal">
+
+            <section class="carrossel" aria-label="Carrossel de Destaques">
+                <div class="slides-container">
+                    <img src="images/banner - carrossel/slide1.png" alt="Slide 1" class="slide ativo">
+                    <img src="images/banner - carrossel/slide2.png" alt="Slide 2" class="slide">
+                    <img src="images/banner - carrossel/slide3.png" alt="Slide 3" class="slide">
+                    <img src="images/banner - carrossel/slide4.png" alt="Slide 4" class="slide">
+                </div>
+
+                <button class="prev-button" aria-label="Anterior">&#10094;</button>
+                <button class="next-button" aria-label="Próximo">&#10095;</button>
+            </section>
+
+            <section>
+                <h2 style="text-align: center;">Destaques da Semana</h2>
+                <div class="jogos_destaques">
+                    
+                    <article class="aumento">
+                        <div class="galeria">
+                            <img src="images/capa - jogos/logo - kid chameleon.webp" alt="capa do jogo kid chameleon">
+                        </div>
+                        <h3 style="text-align: center;"><a href="KidChameleon.html" class="link-jogos">Kid Chameleon</a></h3>
+                        <p style="text-align: center;">1992</p>
+                    </article>
+
+                    <article class="aumento">
+                        <div class="galeria">
+                            <img src="images/capa - jogos/logo - mega man 2.jpg" alt="capa do jogo mega man 2">
+                        </div>
+                        <h3 style="text-align: center;"><a href="MegaMan2.html" class="link-jogos">Mega Man 2</a></h3>
+                        <p style="text-align: center;">1988</p>
+                    </article>
+
+                    <article class="aumento">
+                        <div class="galeria">
+                            <img src="images/capa - jogos/logo - super mario world.jpg" alt="capa do jogo super mario world">
+                        </div>
+                        <h3 style="text-align: center;"><a href="SuperMarioWorld.html" class="link-jogos">Super Mario World</a></h3>
+                        <p style="text-align: center;">1990</p>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h2 style="text-align: center;">Selecione Sua Plataforma de Memórias</h2>
+
+                <div class="consoles">
+                    <article class="aumento console-cards">
+                        <div class="galeria2">
+                            <img src="images/controles/controle - NES.png" alt="pixel art do controle do NES">
+                        </div>
+                        <h3><a href="games.html" class="link-jogos">NES</a></h3>
+                    </article>
+
+                    <article class="aumento console-cards">
+                        <div class="galeria2">
+                            <img src="images/controles/controle - SNES.png" alt="pixel art do controle do SNES">
+                        </div>
+                        <h3><a href="games.html" class="link-jogos">SNES</a></h3>
+                    </article>
+
+                    <article class="aumento console-cards">
+                        <div class="galeria2">
+                            <img src="images/controles/controle - Mega Drive.png" alt="pixel art do controle do Mega Drive">
+                        </div>
+                        <h3><a href="games.html" class="link-jogos">MEGA DRIVE</a></h3>
+                    </article>
+
+                    <article class="aumento console-cards">
+                        <div class="galeria2">
+                            <img src="images/controles/controle - Master System.png" alt="pixel art do controle do Master System">
+                        </div>
+                        <h3><a href="games.html" class="link-jogos">MASTER SYSTEM</a></h3>
+                    </article>
+
+                </div>
+
+            </section>
+        </main>
+        <footer class="footer">
+        <div class="container">
+            <p style="text-align: center; font-weight: bold;">&copy; 2025 Pixel & Memories. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

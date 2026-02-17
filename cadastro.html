@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+    <body class="body-cadastro">
+        <div id="container">
+            <header aria-label="cabeçalho da página">
+                <div class="header-conteudo">
+                    <a href="#" class="logo-link">
+                        <img src="images/logo.png" alt="logo da pixel memories">
+                    </a>
+
+                    <nav aria-label="menu de navegação" class="header-nav">
+                        <ul>
+                            <li class="aumento"><a href="index.html">Início</a></li>
+                            <li class="aumento"><a href="games.html">Games</a></li>
+                            <li class="aumento"><a href="sobre.html">Sobre</a></li>
+                            <li class="aumento"><a href="#">Cadastro</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="main-cadastro">
+            <h1 class="h1-cadastro">Cadastro de Usuário</h1>
+            <form id="userForm" action="process_form.php" method="POST">
+
+            <fieldset>
+                    <legend>Crie Sua Conta de Jogador</legend>
+
+                    <label for="usuario_nick">Nome de Usuário (Nick)</label>
+                    <input type="text" id="usuario_nick" name="usuario_nick" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required minlength="8">
+
+                    <label for="confirmacao_senha">Confirmação de Senha</label>
+                    <input type="password" id="confirmacao_senha" name="confirmacao_senha" required>
+
+                    <br><br>
+
+                    <label for="telefone">Telefone (Opcional)</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(DDD) 9XXXX-XXXX">
+
+                    <label for="data_nascimento">Data de Nascimento</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+                    <label for="console_favorito">Console Clássico Favorito</label>
+                    <select id="console_favorito" name="console_favorito" required>
+                        <option value="" disabled selected>Selecione um console...</option>
+                        <option value="nes">Nintendo NES</option>
+                        <option value="snes">Super Nintendo (SNES)</option>
+                        <option value="mega">Mega Drive</option>
+                        <option value="master">Master System</option>
+                    </select>
+                </fieldset>
+
+            <fieldset>
+                <legend>Quer Receber o Power-Up de História na Sua Caixa de Entrada?</legend> <label for="newsletter_sim">
+                    <input type="checkbox" id="newsletter_sim" name="newsletter_optin" value="sim" checked>
+                    Sim, quero receber todas as novidades e curiosidades!
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Conclusão da Jornada</legend>
+
+                <label for="termos_uso">
+                    <input type="checkbox" id="termos_uso" name="termos_uso" required>
+                    Li e concordo com os <a href="#" target="_blank">Termos de Uso</a> e a <a href="#" target="_blank">Política de Privacidade</a>.
+                </label>
+                <br>
+
+                <button type="submit" class="aumento">Criar Conta e Iniciar Jogo!</button>
+                <button type="reset" class="aumento">Limpar</button>
+
+            </fieldset>
+            </form>
+        </main>
+            <footer class="footer">
+                <div class="container">
+                    <p style="text-align: center; font-weight: bold;">&copy; 2025 Pixel & Memories. Todos os direitos reservados.</p>
+                </div>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
